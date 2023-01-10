@@ -1,0 +1,261 @@
+/*Global Styles*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Monsterrat', 'Lato', sans-serif;
+    max-width: 100%;
+}
+
+body {
+    display: block;
+}
+
+h5 {
+    background-color: red;
+}
+
+
+/*Navigation Bar*/
+
+nav {
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    padding: 1rem;
+    align-items: center;
+}
+
+nav h3 {
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 200;
+    text-transform: uppercase;
+    border: 2px solid black;
+    padding: 0.6rem;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    list-style: none;
+    padding: 1.2rem;
+}
+
+nav a {
+    font-size: 18px;
+    padding: 10px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: black;
+}
+
+nav ul a:hover {
+    background-color: red;
+    color: white;
+}
+
+nav .burgermenu {
+    display: none;
+}
+
+
+/*Banner Text and Photo*/
+
+
+.banner .overlay {
+    width: 100%;
+    position: absolute;
+    padding-top: 30%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.title h1 {
+    font-size: 8rem;
+}
+
+.title h5 {
+    letter-spacing: 5px;
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+    padding: 1.2rem;
+}
+
+
+/*About Section*/
+
+
+.mission {
+    padding: 3rem;
+    background-color: red;
+    color: white;
+    margin: 1rem;
+}
+
+.mission h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 100px;
+    padding-bottom: 1.2rem;
+}
+
+.mission p {
+    font-weight: 100px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 1px;
+}
+
+.box {
+    border: 2px solid white;
+    width: 400px;
+    min-height: 600px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.description {
+    background-color:rgb(0, 0, 0, 0.85);
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 30px 30px;
+}
+
+.description h3 {
+    text-transform: uppercase;
+}
+
+.description h4 {
+    font-size: 10px;
+    font-weight: 100;
+}
+
+#create {
+    background-image: url(./origami\ cranes.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 5;
+}
+
+#learn {
+    background-image: url(./Vintage\ Japanese\ Art.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 5;
+}
+
+#meet {
+    background-image: url(./meet\ friends.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 5;
+}
+
+
+ /*Contact and Meetup info*/
+
+
+.contact {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.location h2, h3 {
+    padding-bottom: 10px;
+}
+
+.location p {
+    padding-bottom: 20px;
+}
+
+.location {
+    width: 300px;
+    height: 300px;
+}
+
+.contact img {
+    width: 600px;
+    height: 300px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: red;
+    color: white;
+    padding: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+    footer a {
+        text-decoration: black;
+        color: white;
+    }
+
+
+/*Media Queries*/
+
+@media only screen and (max-width: 1048px) {
+   .banner .overlay {
+    padding-top: 16rem;
+   } 
+
+   .title h1 {
+    font-size: 4rem;
+   }
+}
+
+@media only screen and (max-width: 640px) {
+
+    nav h3 {
+        font-size: 12px;
+        padding: 0 auto;
+    }
+
+    nav ul{
+       display: none;
+    }
+
+    nav .burgermenu {
+        display: flex;
+        justify-content: space-between;
+        width: 2rem;
+    }
+
+    .banner {
+        padding-top: 4rem;
+    }
+
+    .banner .overlay{
+        padding-top: 10rem;
+    }
+
+    .title h1 {
+        font-size: 2rem;
+       }
+
+    .banner img {
+        height: 450px;
+    }
+}
